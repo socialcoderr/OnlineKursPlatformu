@@ -1,9 +1,8 @@
 import React from "react";
 
 export default function Footer() {
-  return;
-  <>
-    <Footer id="footer-part">
+  return (
+    <>
       <div className="footer-top pt-40 pb-70">
         <div className="container">
           <div className="row">
@@ -182,7 +181,7 @@ export default function Footer() {
           <div className="row">
             <div className="col-md-8">
               <div className="copyright text-md-left text-center pt-15">
-                <p>&copy; Copyrights 2020 Edubin All rights reserved. </p>
+                <p> Copyrights 2020 Edubin All rights reserved. </p>
               </div>
             </div>
             <div className="col-md-4">
@@ -195,6 +194,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </Footer>
-  </>;
+    </>
+  );
 }

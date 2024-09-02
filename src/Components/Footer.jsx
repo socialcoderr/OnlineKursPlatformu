@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -49,56 +50,48 @@ export default function Footer() {
                 </div>
                 <ul>
                   <li>
-                    <a href="index.html">
+                    <Link to="/">
                       <i className="fa fa-angle-right"></i>Home
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="about.html">
+                    <Link to="/about">
                       <i className="fa fa-angle-right"></i>About us
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="courses.html">
+                    <Link to="/courses">
                       <i className="fa fa-angle-right"></i>Courses
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="blog.html">
+                    <Link to="/blog">
                       <i className="fa fa-angle-right"></i>News
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="events.html">
+                    <Link to="/events">
                       <i className="fa fa-angle-right"></i>Event
-                    </a>
+                    </Link>
                   </li>
                 </ul>
+
                 <ul>
                   <li>
-                    <a href="#">
+                    <Link to="/gallery">
                       <i className="fa fa-angle-right"></i>Gallery
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="shop.html">
-                      <i className="fa fa-angle-right"></i>Shop
-                    </a>
-                  </li>
-                  <li>
-                    <a href="teachers.html">
+                    <Link to="/teachers">
                       <i className="fa fa-angle-right"></i>Teachers
-                    </a>
+                    </Link>
                   </li>
+
                   <li>
-                    <a href="#">
-                      <i className="fa fa-angle-right"></i>Support
-                    </a>
-                  </li>
-                  <li>
-                    <a href="contact.html">
+                    <Link to="/contact">
                       <i className="fa fa-angle-right"></i>Contact
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

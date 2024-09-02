@@ -1,11 +1,9 @@
 import React from "react";
-import { Routes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import AboutUs from "./Components/AboutUs";
 import CourseCard from "./Components/CourseCard";
-import CourseList from "./Components/CourseList";
-import Navbar from "./Components/Navbar";
 import SearchBar from "./Components/SearchBar";
 import Sidebar from "./Components/Sidebar";
 import Slider from "./Components/Slider";
@@ -39,8 +37,6 @@ function App() {
         <Route path="/events" element={<Events />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/courseList" element={<CourseList />} />
-        <Route path="/navbar" element={<Navbar />} />
         <Route path="/searchBar" element={<SearchBar />} />
         <Route path="/sideBar" element={<Sidebar />} />
         <Route path="/slider" element={<Slider />} />

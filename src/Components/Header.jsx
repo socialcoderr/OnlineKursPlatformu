@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <>
@@ -56,10 +56,7 @@ export default function Header() {
                   <div className="login-register">
                     <ul>
                       <li>
-                        <a href="register.html">Login</a>
-                      </li>
-                      <li>
-                        <a href="register.html">Register</a>
+                        <Link to="/login">Login / Register</Link>
                       </li>
                     </ul>
                   </div>
@@ -74,9 +71,9 @@ export default function Header() {
             <div className="row">
               <div className="col-lg-12">
                 <nav className="navbar navbar-expand-lg">
-                  <a className="navbar-brand" href="index-4.html">
-                    <img src="images/logo.png" alt="Logo" />
-                  </a>
+                  <Link className="navbar-brand" to="/">
+                    <img src="/images/logo.png" alt="Logo" />
+                  </Link>
                   <button
                     className="navbar-toggler"
                     type="button"
@@ -97,129 +94,46 @@ export default function Header() {
                   >
                     <ul className="navbar-nav ml-auto">
                       <li className="nav-item">
-                        <a className="active" href="index.html">
+                        <Link className="active" to="/">
                           Home
-                        </a>
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link to="/about">About Us</Link>
                         <ul className="sub-menu">
                           <li>
-                            <a className="active" href="index.html">
-                              Home 01
-                            </a>
-                          </li>
-                          <li>
-                            <a href="index-2.html">Home 02</a>
-                          </li>
-                          <li>
-                            <a href="index-3.html">Home 03</a>
-                          </li>
-                          <li>
-                            <a href="index-4.html">Home 04</a>
+                            <Link to="/privacyPolicy">Privacy Policy</Link>
                           </li>
                         </ul>
                       </li>
                       <li className="nav-item">
-                        <a href="#">Pages</a>
-                        <ul className="sub-menu">
-                          <li>
-                            <a href="about.html">About Us</a>
-                          </li>
-                          <li>
-                            <a href="gallery.html">Gallery</a>
-                          </li>
-                          <li>
-                            <a href="policy.html">Privacy Policy</a>
-                          </li>
-                          <li>
-                            <a href="faq.html">FAQ</a>
-                          </li>
-                        </ul>
+                        <Link to="/courses">Courses</Link>
                       </li>
                       <li className="nav-item">
-                        <a href="courses.html">Courses</a>
-                        <ul className="sub-menu">
-                          <li>
-                            <a href="courses.html">Courses</a>
-                          </li>
-                          <li>
-                            <a href="courses-single.html">Course Single</a>
-                          </li>
-                        </ul>
+                        <Link to="/events">Events</Link>
                       </li>
                       <li className="nav-item">
-                        <a href="events.html">Events</a>
+                        <Link to="/">Services</Link>
                         <ul className="sub-menu">
                           <li>
-                            <a href="events.html">Events List 1</a>
+                            <Link to="/teacher">Teachers</Link>
                           </li>
                           <li>
-                            <a href="events-2.html">Events List 2</a>
-                          </li>
-                          <li>
-                            <a href="events-single.html">Event Single</a>
+                            <Link to="/gallery">Gallery</Link>
                           </li>
                         </ul>
+                      </li>
+
+                      <li className="nav-item">
+                        <Link to="/blog">Blog</Link>
+                        <ul className="sub-menu"></ul>
                       </li>
                       <li className="nav-item">
-                        <a href="teachers.html">Teachers</a>
-                        <ul className="sub-menu">
-                          <li>
-                            <a href="teachers.html">teachers</a>
-                          </li>
-                          <li>
-                            <a href="teachers-2.html">teachers 2</a>
-                          </li>
-                          <li>
-                            <a href="teachers-single.html">teacher Single</a>
-                          </li>
-                        </ul>
+                        <Link to="/faq">FAQ</Link>
                       </li>
+
                       <li className="nav-item">
-                        <a href="blog.html">Blog</a>
-                        <ul className="sub-menu">
-                          <li>
-                            <a href="blog.html">Blog</a>
-                          </li>
-                          <li>
-                            <a href="blog-single.html">Blog Single</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="nav-item">
-                        <a href="shop.html">Shop</a>
-                        <ul className="sub-menu">
-                          <li>
-                            <a href="shop.html">Shop</a>
-                          </li>
-                          <li>
-                            <a href="shop-single.html">Shop Single</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="nav-item">
-                        <a href="contact.html">Contact</a>
-                        <ul className="sub-menu">
-                          <li>
-                            <a href="contact.html">Contact Us</a>
-                          </li>
-                          <li>
-                            <a href="contact-2.html">Contact Us 2</a>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="right-icon text-right">
-                    <ul>
-                      <li>
-                        <a href="javascript:void(0)" id="search">
-                          <i className="fa fa-search"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-shopping-bag"></i>
-                          <span>0</span>
-                        </a>
+                        <Link to="/contact">Contact</Link>
                       </li>
                     </ul>
                   </div>

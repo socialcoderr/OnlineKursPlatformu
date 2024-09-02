@@ -1,4 +1,4 @@
-## EDUBİN
+# EDUBİN
 
 
 Edubin, kullanıcıların çeşitli kurslara erişebileceği, kurslara kaydolabileceği ve kendi öğrenim süreçlerini takip edebileceği bir online kurs platformudur. Bu proje React ve Redux kullanılarak geliştirilmiştir.

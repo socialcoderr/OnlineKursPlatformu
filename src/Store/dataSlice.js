@@ -10,28 +10,10 @@ const dataSlice = createSlice({
   name: "data",
   initialState: {
     data: [],
-    status: "idle",
     contact: [],
-    bultenabone: [],
     error: null,
   },
-  reducers: {
-    contact: (state, action) => {
-      let newcontact = [...state.contact];
-      newcontact.push(action.payload);
-      state.contact = newcontact;
-      console.log(state.contact);
-    },
-    bulten: (state, action) => {
-      const yeniabone = action.payload;
-      console.log("Yeni bülten abonesi: " + yeniabone);
-
-      let bultenaboneleri = [...state.bultenabone];
-      bultenaboneleri.push(yeniabone);
-
-      state.bultenabone = bultenaboneleri;
-    },
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(fetchData.pending, (state) => {
@@ -42,11 +24,10 @@ const dataSlice = createSlice({
         state.data = action.payload;
       })
       .addCase(fetchData.rejected, (state, action) => {
-        state.status = "failed";
         state.error = action.error.message;
       });
   },
 });
 
-export const { contact, bulten } = dataSlice.actions;
+export const { contact } = dataSlice.actions;
 export default dataSlice.reducer;

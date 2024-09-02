@@ -19,7 +19,6 @@ import FAQ from "./Pages/FAQ";
 import Gallery from "./Pages/Gallery";
 import Home from "./Pages/Home";
 import Login from "./Pages/Login";
-import NotFound from "./Pages/NotFound";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import Teacher from "./Pages/Teacher";
 
@@ -46,7 +45,6 @@ function App() {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/notFound" element={<NotFound />} />
         <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
         <Route path="/teacher" element={<Teacher />} />
       </Routes>
